@@ -6,7 +6,7 @@ import { StepsLayout } from "./StepsLayout";
 export const BaseLayout = () => {
     const [ state, send ] = useMachine(bookingMachine)
 
-    console.log('nuestra maquina', state.value)
+    console.log('nuestra maquina', state.value, state.context)
 
     return (
         <div>
